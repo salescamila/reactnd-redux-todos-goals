@@ -23,7 +23,7 @@ function toggleTodo (id) {
   }
 }
 
-export  function handleAddTodo (name, cb) {
+export function handleAddTodo (name, cb) {
   return (dispatch) => {
     return API.saveTodo(name)
       .then((todo) => {
